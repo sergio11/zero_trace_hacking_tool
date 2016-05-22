@@ -58,6 +58,15 @@ doctrine:
         auto_generate_proxy_classes: "%kernel.debug%"
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
+        resolve_target_entities:
+          AppBundle\Entity\ArticleInterface: AppBundle\Entity\Article
+          AppBundle\Entity\BlogTaxonomyInterface: AppBundle\Entity\Taxonomy
+          AppBundle\Entity\CommentInterface: AppBundle\Entity\Comment
+          AppBundle\Entity\ArticleMetaInterface: AppBundle\Entity\ArticleMeta
+          AppBundle\Entity\BlogUserInterface: AppBundle\Entity\User
+          AppBundle\Entity\ArticleCommenterInterface: AppBundle\Entity\User
+          AppBundle\Entity\BlogTermInterface: AppBundle\Entity\Term
+
 
 # Swiftmailer Configuration
 swiftmailer:

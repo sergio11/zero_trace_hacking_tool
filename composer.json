@@ -29,7 +29,9 @@
         "incenteev/composer-parameter-handler": "^2.0",
         "sonata-project/admin-bundle": "*",
         "sonata-project/doctrine-orm-admin-bundle": "*",
-        "raindrop/sonata-theme-bundle": "dev-master"
+        "doctrine/doctrine-fixtures-bundle": "^2.3",
+        "stof/doctrine-extensions-bundle": "^1.2",
+        "friendsofsymfony/user-bundle": "~2.0@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
