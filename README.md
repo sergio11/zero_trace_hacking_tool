@@ -1,4 +1,3 @@
-catalog
-=======
 
-A Symfony project created on May 22, 2016, 11:34 am.
+# theCoder
+Blog about web programming and mobile
