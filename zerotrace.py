@@ -1,7 +1,6 @@
-
 from googlesearch import GoogleSearch
 from results_parser import ResultsProcessor
-
+from file_downloader import FileDownloader
 
 class ZeroTrace:
     """
@@ -50,14 +49,16 @@ class ZeroTrace:
         except Exception as e:
             raise RuntimeError(f"Failed to perform the search: {str(e)}")
 
-    def process_results(self, results, output_html=None, output_json=None):
+    def process_results(self, results, output_html=None, output_json=None, download=None):
         """
-        Processes and displays the search results. Optionally exports results to HTML or JSON.
+        Processes and displays the search results. Optionally exports results to HTML or JSON,
+        and downloads specified file types.
 
         Args:
             results (list of dict): The search results to process.
             output_html (str): Path to export the results to an HTML file (optional).
             output_json (str): Path to export the results to a JSON file (optional).
+            download (str): Comma-separated list of file extensions to download (optional).
         """
         rparser = ResultsProcessor(results)
 
@@ -71,3 +72,10 @@ class ZeroTrace:
         # Export results to JSON if specified
         if output_json:
             rparser.export_json(output_json)
+
+        # Download specified files from the results
+        if download:
+            file_types = download.split(",")
+            urls = [result['link'] for result in results]
+            fdownloader = FileDownloader("Downloads")  # Adjust the folder name as needed
+            fdownloader.filter_download_files(urls, file_types)

@@ -39,6 +39,9 @@ def main():
     # Output options for JSON and HTML
     parser.add_argument("--json", type=str, help="Export results to the specified file in JSON format.")
     parser.add_argument("--html", type=str, help="Export results to the specified file in HTML format.")
+    
+    # New download argument for specifying file extensions
+    parser.add_argument("--download", type=str, default="all", help="Specify file extensions to download, separated by commas. Example: --download 'pdf,doc,sql'")
 
     # Parse arguments from the command line
     args = parser.parse_args()
@@ -72,7 +75,7 @@ def main():
     results = zerotrace.run_search(query=args.query, start_page=args.start_page, pages=args.pages, lang=args.lang)
 
     # Process and export results (if needed)
-    zerotrace.process_results(results, output_html=args.html, output_json=args.json)
+    zerotrace.process_results(results, output_html=args.html, output_json=args.json, download=args.download)
 
 if __name__ == "__main__":
     main()
