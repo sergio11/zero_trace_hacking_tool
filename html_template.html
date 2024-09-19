@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Dorks Report</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+            background-color: #f8f9fa; /* Light background for better readability */
+        }
+        .result {
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff; /* White background for results */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+        .result:hover {
+            background-color: #e9ecef; /* Light gray on hover */
+        }
+        .result h5 {
+            color: #007bff; /* Blue title */
+            margin-bottom: 10px; /* Space below the title */
+        }
+        .result p {
+            font-style: italic; /* Italicized description */
+        }
+        .index {
+            font-weight: bold; /* Bold index */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Google Dorks Results</h1>
+        <div class="results-container">
+            {{ results }}
+        </div>
+    </div>
+</body>
+</html>
