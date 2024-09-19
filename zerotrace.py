@@ -77,5 +77,5 @@ class ZeroTrace:
         if download:
             file_types = download.split(",")
             urls = [result['link'] for result in results]
-            fdownloader = FileDownloader("Downloads")  # Adjust the folder name as needed
+            fdownloader = FileDownloader("Downloads")
             fdownloader.filter_download_files(urls, file_types)
