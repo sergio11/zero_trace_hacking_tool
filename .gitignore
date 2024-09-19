@@ -1,16 +1,10 @@
-/app/config/parameters.yml
-/build/
-/phpunit.xml
-/var/*
-!/var/cache
-/var/cache/*
-!var/cache/.gitkeep
-!/var/logs
-/var/logs/*
-!var/logs/.gitkeep
-!/var/sessions
-/var/sessions/*
-!var/sessions/.gitkeep
-!var/SymfonyRequirements.php
-/vendor/
-/web/bundles/
+# Files generated when packaging the project
+dist/
+build/
+*.egg-info/
+
+# Python cache files (no need to include them)
+__pycache__/
+
+# PyPI configuration file (do not include in the repository!)
+~/.pypirc
