@@ -3,6 +3,7 @@
 Welcome to **ZeroTrace**, your go-to tool for ethical hacking and advanced search engine dorking! ⚡
 
 ZeroTrace is an innovative tool designed for **cybersecurity professionals** and **ethical hackers** 🛡️ to identify potential **attack vectors** 🌍 across the vast expanse of the **World Wide Web**. Whether you're performing reconnaissance on a target or conducting security research, ZeroTrace helps you uncover hidden and sensitive information 🔓 that may be exposed due to **misconfigurations** or **poor security practices**.
+
 🔒 **Disclaimer**: This tool is designed for educational and research purposes. Misuse of this tool could result in violation of laws and regulations. Please use responsibly.
 
 ## 🔍 **What is ZeroTrace?**
