@@ -36,9 +36,6 @@ class SearchResultsFormatter:
             # Get the directory of the current file
             current_dir = os.path.dirname(os.path.abspath(__file__))
 
-            print(f"Current file: {__file__}")
-            print(f"Current Dir: {current_dir}")
-
             # Construct the path to the HTML template
             template_path = os.path.join(current_dir, "templates", "html_template.html")
 
@@ -53,7 +50,7 @@ class SearchResultsFormatter:
                     f'<div class="result">'
                     f'<div class="index">Result {index}</div>'
                     f'<h5>{result["title"]}</h5>'
-                    f'<p>{result["snippet"]}</p>'  # Updated to use snippet instead of description
+                    f'<p>{result["snippet"]}</p>'
                     f'<a href="{result["link"]}" target="_blank">{result["link"]}</a>'
                     f'<div><strong>Source:</strong> {result.get("displayLink", "N/A")}</div>'
                     f'<div><strong>Formatted URL:</strong> {result.get("formattedUrl", "N/A")}</div>'
@@ -96,18 +93,18 @@ class SearchResultsFormatter:
         table.add_column("Title", width=50)
         table.add_column("Description")
         table.add_column("Link")
-        table.add_column("Source", width=30)  # New column for displayLink
-        table.add_column("Thumbnail")  # New column for thumbnail
+        table.add_column("Source", width=30)
+        table.add_column("Thumbnail")
 
         # Add results to the table
         for index, result in enumerate(self.results, start=1):
             table.add_row(
                 str(index), 
                 result['title'], 
-                result['snippet'],  # Updated to use snippet instead of description
+                result['snippet'],
                 result['link'],
-                result.get('displayLink', 'N/A'),  # New field
-                result.get('thumbnail', '')  # New field
+                result.get('displayLink', 'N/A'),
+                result.get('thumbnail', '')
             )
             table.add_row("", "", "", "", "", "")  # Add an empty row for visual spacing
         
