@@ -1,7 +1,7 @@
 import os
 import sys
 import argparse
-from zerotrace import ZeroTrace
+from zerotrace import SearchArgs, ZeroTrace
 from dotenv import load_dotenv, set_key
 
 def env_config():
@@ -23,9 +23,12 @@ def main():
     # Argument parser setup
     parser = argparse.ArgumentParser(description="ZeroTrace: A tool for automated advanced Google searches.")
 
-    # Search query argument
-    parser.add_argument("-q", "--query", type=str, help="Specify the Google Dork or search query. Example: -q \"filetype:sql 'MySQL dump' (pass|password|passwd|pwd)\"")
-    
+    # Dork query argument
+    parser.add_argument("-d", "--dork", type=str, default=None, help="Specify the Google Dork or search query. Example: -d 'filetype:sql \"MySQL dump\" (pass|password|passwd|pwd)'")
+
+    # AI-generated Dork argument
+    parser.add_argument("-q", "--query-dork", type=str, default=None, help="Automatically generates a Google Dork based on a description using AI.")
+
     # Configuration flag
     parser.add_argument("-c", "--configure", action="store_true", help="Configure or update the .env file with API credentials.")
     
@@ -51,31 +54,44 @@ def main():
         env_config()
         sys.exit(0)
 
-    # Ensure that query is provided
-    if not args.query:
-        print("ERROR: A search query is required. Use the -q option to specify the query.")
-        sys.exit(1)
-
     # Load environment variables from the .env file
     load_dotenv()
 
     # Retrieve API key and search engine ID from the environment variables
     google_api_key = os.getenv("API_KEY_GOOGLE")
     search_engine_id = os.getenv("SEARCH_ENGINE_ID")
+    groq_api_key = os.getenv("GROQ_API_KEY")
 
     # Check if API credentials are available
     if not google_api_key or not search_engine_id:
         print("ERROR: Missing API_KEY or SEARCH_ENGINE_ID. Run with --configure to set them up.")
         sys.exit(1)
 
+    if not args.query_dork and not args.dork:
+        print("ERROR: A query dork or dork must be provided. Use the -q or -d option to specify the query.")
+        sys.exit(1)
+
     # Initialize ZeroTrace with the API key and search engine ID
-    zerotrace = ZeroTrace(google_api_key, search_engine_id)
+    zerotrace = ZeroTrace(
+        google_api_key=google_api_key, 
+        search_engine_id=search_engine_id, 
+        groq_api_key=groq_api_key,
+        output_html=args.html, 
+        output_json=args.json, 
+        download=args.download
+    )
+
+    searchArgs = SearchArgs(
+        start_page=args.start_page, 
+        pages=args.pages, 
+        lang=args.lang
+    )
 
     # Perform the search
-    results = zerotrace.run_search(query=args.query, start_page=args.start_page, pages=args.pages, lang=args.lang)
-
-    # Process and export results (if needed)
-    zerotrace.process_results(results, output_html=args.html, output_json=args.json, download=args.download)
+    if args.dork:
+        zerotrace.search_with_dork(query=args.dork, search_args = searchArgs)
+    else:
+        zerotrace.generate_dork_and_search(description=args.query_dork, search_args = searchArgs)
 
 if __name__ == "__main__":
     main()

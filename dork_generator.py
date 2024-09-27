@@ -20,9 +20,6 @@ class DorkGenerator:
             model_id (str): The ID of the Groq model to use. Default is 'llama3-70b-8192'.
             groq_api_key (str): The API key for accessing Groq services.
         """
-        if groq_api_key is None:
-            groq_api_key = os.getenv("GROQ_API_KEY")
-        
         if not groq_api_key:
             raise ValueError("Groq API key must be provided either as an argument or an environment variable.")
 
