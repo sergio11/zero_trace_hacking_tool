@@ -54,6 +54,71 @@ ZeroTrace allows you to export search results in multiple formats:
 
 ZeroTrace uses **Generative AI** via **open-source models** like **Llama3** to generate high-quality, optimized Google Dorks based on natural language input. This feature allows you to easily convert descriptions into actionable Google Dorks, speeding up the reconnaissance process.
 
+## 🎯 Usage Examples
+
+Here are some examples of how to use **ZeroTrace** from the command line:
+
+* Basic Google Dork Search:
+
+Run a Google dork search to find SQL files related to MySQL dumps:
+
+```python
+python zerotrace_cli.py -d "filetype:sql \"MySQL dump\" (pass|password|passwd|pwd)" --pages 2 --json results.json --html report.html
+```
+This command searches for SQL files and exports the results in both JSON and HTML formats.
+
+* AI-Generated Dork Query:
+
+Automatically generate a Google Dork based on a description and retrieve results:
+
+```python
+python zerotrace_cli.py -q "Find text files that contain usernames and passwords." --start-page 1 --pages 3 --json output.json --html output.html
+```
+
+This command generates a dork based on the input description and retrieves results from the first three pages.
+
+* Download Specific File Types:
+
+Search for and download only PDF and DOC files:
+```python
+python zerotrace_cli.py -d "filetype:pdf OR filetype:doc \"confidential\"" --download-file-extensions "pdf,doc" --download-folder "my_downloads" --json results.json --html report.html
+```
+This command searches for both PDF and DOC files containing the term "confidential" and saves them in the "my_downloads" folder.
+
+ * Download All File Types
+
+If you want to download all file types found in the search, you can specify "all":
+
+```python
+python zerotrace_cli.py -q "site:example.com" --download-file-extensions "all" --download-folder "downloads" --pages 5 --json output.json --html report.html
+```
+This command retrieves results from the first five pages for the site "example.com" and downloads all file types into the "downloads" folder.
+
+* Configure API Credentials
+
+If you need to set up or update your API credentials, use the configure flag:
+
+```python
+python zerotrace_cli.py --configure
+```
+This command will guide you through configuring your Google API key and Custom Search Engine ID in the .env file.
+
+## ⚙️ CLI Arguments
+
+| Argument                        | Description                                                                                                                                           |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `-d`, `--dork`                  | Specify the Google Dork or search query.                                                                                                           |
+| `-q`, `--query-dork`           | Automatically generates a Google Dork based on a description using AI.                                                                             |
+| `-c`, `--configure`             | Configure or update the `.env` file with API credentials.                                                                                         |
+| `--start-page`                  | The starting page number for search results (default: 1).                                                                                         |
+| `--pages`                       | The number of pages to retrieve (default: 1).                                                                                                     |
+| `--lang`                        | Language code for search results (default: `lang_es` for Spanish).                                                                                  |
+| `--json`                        | Export results to the specified file in JSON format.                                                                                               |
+| `--html`                        | Export results to the specified file in HTML format.                                                                                               |
+| `--download-file-extensions`    | Specify file extensions to download, separated by commas. Use `'all'` to download all file types.                                                  |
+| `--download-folder`             | Specify the folder where downloaded files will be saved. Use a custom folder name to save files in a specific directory.                          |
+
+
 ## 🔐 **Ethical Use**
 
 This tool is meant for **ethical hacking** and **cybersecurity research** purposes. Ensure that you have proper authorization before using ZeroTrace for any reconnaissance activities. Unauthorized use to access or download sensitive data may be illegal in your jurisdiction.
