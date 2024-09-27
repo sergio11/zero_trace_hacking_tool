@@ -44,11 +44,23 @@ ZeroTrace helps **ethical hackers** and **security researchers** streamline the 
 3. Set up your environment variables.
 4. Run the tool.
 
+## 🛠️ **API Key Configuration**
+
+Before using ZeroTrace, you need to configure the following API keys:
+
+- **Google Search API Key**: This key allows ZeroTrace to access Google’s powerful search capabilities. It’s required for making search requests to Google.
+  
+- **Custom Search Engine ID**: This ID identifies the specific Google Custom Search Engine you’ll be using. It helps tailor the search results to specific sites or content types based on your configuration.
+  
+- **Groq API Key**: This key is used to access Groq's AI capabilities, specifically for generating optimized Google Dorks. Groq leverages the **Llama** Large Language Model (LLM) developed by Meta, which assists in converting your search queries into effective dorks.
+
 ## 📂 **Output Formats**
 
-ZeroTrace allows you to export search results in multiple formats:
-- **HTML Report** 📝: Nicely formatted, easy-to-read report.
-- **JSON Export** 🗂️: Structured data format for further processing or analysis.
+ZeroTrace provides flexibility in how you view and utilize search results, offering multiple output formats:
+
+- **Console Display** 🖥️: Search results are presented directly in the console for immediate viewing and analysis.
+- **HTML Report** 📝: Nicely formatted, easy-to-read report suitable for sharing or documentation.
+- **JSON Export** 🗂️: Structured data format for further processing or analysis, allowing for integration with other tools or systems.
 
 ## 🤖 **AI Integration**
 
