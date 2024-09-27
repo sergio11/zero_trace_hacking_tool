@@ -54,6 +54,32 @@ ZeroTrace allows you to export search results in multiple formats:
 
 ZeroTrace uses **Generative AI** via **open-source models** like **Llama3** to generate high-quality, optimized Google Dorks based on natural language input. This feature allows you to easily convert descriptions into actionable Google Dorks, speeding up the reconnaissance process.
 
+## 🎯 Usage Examples
+
+Here are some examples of how to use **ZeroTrace** from the command line:
+
+* Basic Search Query:
+
+```python
+python zerotrace_cli.py -q "List of users and passwords in text file contents." --pages 2 --json output.json --html output.html
+```
+This command searches for a specific query and saves the results in both JSON and HTML formats.
+
+* Custom File Type Filter:
+
+```python
+python zerotrace_cli.py -q "Confidential documents" --file-type pdf --json output.pdf.json
+```
+
+This example shows how to filter results for specific file types, like PDF documents.
+
+* Search with Language Filter:
+
+```python
+python zerotrace_cli.py -q "SQL injection vulnerabilities" --language es --html output_spanish.html
+```
+This command searches for SQL injection vulnerabilities and limits the results to Spanish content.
+
 ## 🔐 **Ethical Use**
 
 This tool is meant for **ethical hacking** and **cybersecurity research** purposes. Ensure that you have proper authorization before using ZeroTrace for any reconnaissance activities. Unauthorized use to access or download sensitive data may be illegal in your jurisdiction.
