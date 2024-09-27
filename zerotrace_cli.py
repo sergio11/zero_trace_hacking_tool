@@ -6,13 +6,17 @@ from dotenv import load_dotenv, set_key
 
 def env_config():
     """
-    Prompts the user to enter Google API Key and Custom Search Engine ID,
-    then stores these values in a .env file for future use.
+    Prompts the user to enter Google API Key, Custom Search Engine ID,
+    and Groq API Key, then stores these values in a .env file for future use.
     """
     api_key = input("Enter your Google API KEY: ")
     engine_id = input("Enter your Google Custom Search Engine ID: ")
+    groq_api_key = input("Enter your GROQ API KEY: ")
+    
     set_key(".env", "API_KEY_GOOGLE", api_key)
     set_key(".env", "SEARCH_ENGINE_ID", engine_id)
+    set_key(".env", "GROQ_API_KEY", groq_api_key)
+    
     print("Configuration saved to .env file successfully.")
 
 def main():
