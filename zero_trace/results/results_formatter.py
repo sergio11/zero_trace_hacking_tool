@@ -1,6 +1,7 @@
 import json
 from rich.console import Console
 from rich.table import Table
+import os
 
 class SearchResultsFormatter:
     """
@@ -32,8 +33,17 @@ class SearchResultsFormatter:
             FileNotFoundError: If the HTML template file is not found.
         """
         try:
+            # Get the directory of the current file
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+
+            print(f"Current file: {__file__}")
+            print(f"Current Dir: {current_dir}")
+
+            # Construct the path to the HTML template
+            template_path = os.path.join(current_dir, "templates", "html_template.html")
+
             # Read the HTML template file
-            with open("html_template.html", 'r', encoding='utf-8') as f:
+            with open(template_path, 'r', encoding='utf-8') as f:
                 template = f.read()
 
             # Create HTML elements for each result
@@ -58,9 +68,10 @@ class SearchResultsFormatter:
                 f.write(report_html)
 
             print(f"Results exported to HTML. File created: {output_file}")
-        
+
         except FileNotFoundError:
             print("Error: HTML template file 'html_template.html' not found.")
+
     
     def export_json(self, output_file):
         """
