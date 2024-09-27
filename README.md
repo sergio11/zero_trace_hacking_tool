@@ -118,6 +118,73 @@ This command will guide you through configuring your Google API key and Custom S
 | `--download-file-extensions`    | Specify file extensions to download, separated by commas. Use `'all'` to download all file types.                                                  |
 | `--download-folder`             | Specify the folder where downloaded files will be saved. Use a custom folder name to save files in a specific directory.                          |
 
+## 🚀 Using ZeroTrace: A Practical Example
+
+Below is a practical example of how to use ZeroTrace to perform an advanced search and download relevant files.
+Suppose you want to search for text files containing lists of usernames and passwords. You can execute the following command in the command line:
+
+```python
+python zerotrace_cli.py -q "List of users and passwords in text file contents." --pages 2 --download-file-extensions "txt" --download-folder "downloads" --json output.json --html output.html
+```
+
+### Process Breakdown
+When executing the above command, ZeroTrace follows these steps:
+
+* Initialization:
+
+ZeroTrace initializes with the Google API key and search engine ID, also configuring the download folder and the file types to download.
+
+```python
+2024-09-27 20:07:23,203 - INFO - 🔍 ZeroTrace initialized with Google API key and search engine ID.
+2024-09-27 20:07:23,203 - INFO - 📁 Download folder set to: downloads
+2024-09-27 20:07:23,203 - INFO - 📥 File extensions to download: all
+```
+
+* Dork Generation:
+
+A Google Dork is generated based on the provided description using an AI model.
+
+```python
+2024-09-27 20:07:23,204 - INFO - 📝 Generating Google Dork for description: List of users and passwords in text file contents.
+2024-09-27 20:07:27,030 - INFO - ✅ Generated Dork: filetype:txt ("username password" | "user pass" | "login credentials" | "password list")
+```
+
+* Search Execution:
+
+The search is executed using the generated Dork, and the obtained results are processed.
+
+```python
+2024-09-27 20:07:28,587 - INFO - ✅ Search completed. Processing 13 results.
+```
+
+* Results Export:
+
+The results are exported in HTML and JSON formats for documentation and further analysis.
+
+```python
+2024-09-27 20:07:28,663 - INFO - 📄 Exporting results to HTML: output.html
+Results exported to HTML. File created: output.html
+2024-09-27 20:07:28,671 - INFO - 📊 Exporting results to JSON: output.json
+Results exported to JSON. File created: output.json
+```
+
+* File Download:
+
+Files that match the search criteria are automatically downloaded and stored in the specified folder.
+
+```python
+2024-09-27 20:07:45,016 - INFO - 📥 Downloading files with types: all
+File 'Readme_Baltic%20Sea%20Surface%20Salinity%20L3%20maps.txt' downloaded to 'downloads\Readme_Baltic%20Sea%20Surface%20Salinity%20L3%20maps.txt'.
+...
+```
+
+* Results
+Upon completion, you will receive confirmation that the results have been processed successfully, along with the downloaded files in the specified folder:
+
+```python
+2024-09-27 20:07:45,016 - INFO - ✅ Results processed successfully.
+```
+This example illustrates the power of ZeroTrace in automating the search and collection of sensitive information, thus optimizing the research process for cybersecurity professionals.
 
 ## 🔐 **Ethical Use**
 
