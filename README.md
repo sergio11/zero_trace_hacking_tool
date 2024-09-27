@@ -4,6 +4,8 @@ Welcome to **ZeroTrace**, your go-to tool for ethical hacking and advanced searc
 
 ZeroTrace is an innovative tool designed for **cybersecurity professionals** and **ethical hackers** 🛡️ to identify potential **attack vectors** 🌍 across the vast expanse of the **World Wide Web**. Whether you're performing reconnaissance on a target or conducting security research, ZeroTrace helps you uncover hidden and sensitive information 🔓 that may be exposed due to **misconfigurations** or **poor security practices**.
 
+🙏 I would like to express my sincere gratitude to [Santiago Hernández, a leading expert in Cybersecurity and Artificial Intelligence](https://www.udemy.com/user/shramos/). His outstanding course on **Cybersecurity and Ethical Hacking**, available on Udemy, was instrumental in the development of this project. The insights and techniques I gained from his course were invaluable in guiding my approach to cybersecurity practices. Thank you for sharing your knowledge and expertise!
+
 🔒 **Disclaimer**: This tool is designed for educational and research purposes. Misuse of this tool could result in violation of laws and regulations. Please use responsibly.
 
 ## 🔍 **What is ZeroTrace?**
