@@ -43,8 +43,22 @@ def main():
     parser.add_argument("--json", type=str, help="Export results to the specified file in JSON format.")
     parser.add_argument("--html", type=str, help="Export results to the specified file in HTML format.")
     
-    # New download argument for specifying file extensions
-    parser.add_argument("--download", type=str, default="all", help="Specify file extensions to download, separated by commas. Example: --download 'pdf,doc,sql'")
+    parser.add_argument(
+        "--download-file-extensions", 
+        type=str, 
+        default="all", 
+        help="Specify file extensions to download, separated by commas. Example: --download-file-extensions 'pdf,doc,sql'. "
+            "Use 'all' to download files of all types."
+    )
+
+    parser.add_argument(
+        "--download-folder", 
+        type=str, 
+        default="downloads", 
+        help="Specify the folder where downloaded files will be saved. "
+            "Example: --download-folder 'downloaded_files'. "
+            "Use 'all' to save files in the current directory."
+    )
 
     # Parse arguments from the command line
     args = parser.parse_args()
@@ -78,7 +92,8 @@ def main():
         groq_api_key=groq_api_key,
         output_html=args.html, 
         output_json=args.json, 
-        download=args.download
+        download_file_extensions=args.download_file_extensions,
+        download_folder=args.download_folder
     )
 
     searchArgs = SearchArgs(

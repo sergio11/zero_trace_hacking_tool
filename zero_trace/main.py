@@ -27,7 +27,7 @@ class ZeroTrace:
     ZeroTrace class: Handles Google search execution and result processing using AI for Dork generation.
     """
 
-    def __init__(self, google_api_key, search_engine_id, groq_api_key, output_html=None, output_json=None, download=None):
+    def __init__(self, google_api_key, search_engine_id, groq_api_key, output_html=None, output_json=None, download=None, download_file_extensions=None, download_folder=None):
         """
         Initialize the ZeroTrace class with API keys and optional export/download settings.
         
@@ -38,6 +38,8 @@ class ZeroTrace:
             output_html (str): Path to export results as HTML (optional).
             output_json (str): Path to export results as JSON (optional).
             download (str): File types to download (comma-separated, optional).
+            download_file_extensions (str): Specific file extensions to download, separated by commas (optional).
+            download_folder (str): Path to the folder where downloaded files will be saved (optional).
         """
         self.google_api_key = google_api_key
         self.search_engine_id = search_engine_id
@@ -45,11 +47,15 @@ class ZeroTrace:
         self.output_html = output_html
         self.output_json = output_json
         self.download = download
+        self.download_file_extensions = download_file_extensions
+        self.download_folder = download_folder
 
         self.gsearch = SearchEngine(google_api_key, search_engine_id)
         self.dork_generator = None
 
         logging.info("🔍 ZeroTrace initialized with Google API key and search engine ID.")
+        logging.info(f"📁 Download folder set to: {self.download_folder}")
+        logging.info(f"📥 File extensions to download: {self.download_file_extensions if self.download_file_extensions else 'all'}")
 
     def search_with_dork(self, query, search_args: SearchArgs):
         """
@@ -125,11 +131,11 @@ class ZeroTrace:
             rparser.export_json(self.output_json)
 
         # Download specified files from the results
-        if self.download:
-            logging.info(f"📥 Downloading files with types: {self.download}")
-            file_types = self.download.split(",")
+        if self.download_file_extensions:
+            logging.info(f"📥 Downloading files with types: {self.download_file_extensions}")
+            file_types = self.download_file_extensions.split(",")
             urls = [result['link'] for result in results]
-            fdownloader = FileDownloader("Downloads")
+            fdownloader = FileDownloader(self.download_folder)
             fdownloader.filter_and_download_files(urls, file_types)
-
+            
         logging.info("✅ Results processed successfully.")

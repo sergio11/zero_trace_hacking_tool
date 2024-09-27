@@ -12,3 +12,5 @@ __pycache__/
 .env
 
 output/
+output.json
+output.html
