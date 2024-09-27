@@ -1,7 +1,7 @@
 import os
 import sys
 import argparse
-from zerotrace import SearchArgs, ZeroTrace
+from zero_trace.main import SearchArgs, ZeroTrace
 from dotenv import load_dotenv, set_key
 
 def env_config():

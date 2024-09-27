@@ -1,8 +1,9 @@
-from dork_generator import DorkGenerator
-from googlesearch import GoogleSearch
-from results_parser import ResultsProcessor
-from file_downloader import FileDownloader
 import logging
+
+from zero_trace.results.results_formatter import SearchResultsFormatter
+from zero_trace.search.dork_generator import DorkGenerator
+from zero_trace.search.search_engine import SearchEngine
+from zero_trace.utils.file_downloader import FileDownloader
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -45,7 +46,7 @@ class ZeroTrace:
         self.output_json = output_json
         self.download = download
 
-        self.gsearch = GoogleSearch(google_api_key, search_engine_id)
+        self.gsearch = SearchEngine(google_api_key, search_engine_id)
         self.dork_generator = None
 
         logging.info("🔍 ZeroTrace initialized with Google API key and search engine ID.")
@@ -107,7 +108,7 @@ class ZeroTrace:
         Returns:
             None
         """
-        rparser = ResultsProcessor(results)
+        rparser = SearchResultsFormatter(results)
 
         # Display results in the console
         logging.info("🖥️ Displaying results in the console.")
@@ -129,6 +130,6 @@ class ZeroTrace:
             file_types = self.download.split(",")
             urls = [result['link'] for result in results]
             fdownloader = FileDownloader("Downloads")
-            fdownloader.filter_download_files(urls, file_types)
+            fdownloader.filter_and_download_files(urls, file_types)
 
         logging.info("✅ Results processed successfully.")

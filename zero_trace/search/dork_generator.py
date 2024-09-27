@@ -1,7 +1,5 @@
-from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
-import os
 
 class DorkGenerator:
     """
@@ -77,10 +75,3 @@ class DorkGenerator:
         except Exception as e:
             print(f"Error generating Google Dork: {e}")
             return None
-
-if __name__ == "__main__":
-    load_dotenv()
-    # Ensure the Groq API key is set in your environment or replace with your actual key
-    api_key = os.getenv("GROQ_API_KEY")
-    dork_generator = DorkGenerator(groq_api_key=api_key)
-    print(dork_generator.generate_dork("List of users and passwords in text file contents."))
