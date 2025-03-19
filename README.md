@@ -6,8 +6,6 @@ ZeroTrace is an innovative tool designed for **cybersecurity professionals** and
 
 🙏 I would like to express my sincere gratitude to [Santiago Hernández, a leading expert in Cybersecurity and Artificial Intelligence](https://www.udemy.com/user/shramos/). His outstanding course on **Cybersecurity and Ethical Hacking**, available on Udemy, was instrumental in the development of this project. The insights and techniques I gained from his course were invaluable in guiding my approach to cybersecurity practices. Thank you for sharing your knowledge and expertise!
 
-🔒 **Disclaimer**: This tool is designed for educational and research purposes. Misuse of this tool could result in violation of laws and regulations. Please use responsibly.
-
 ## 🔍 **What is ZeroTrace?**
 
 ZeroTrace helps **ethical hackers** and **security researchers** streamline the process of identifying sensitive information online. By generating precise and powerful Google Dorks, it automates reconnaissance activities, providing quick access to potential vulnerabilities and misconfigurations in systems exposed on the internet.
@@ -17,6 +15,16 @@ ZeroTrace helps **ethical hackers** and **security researchers** streamline the 
 - 📊 **Generate reports** with search results for documentation and analysis.
 - 📂 **Download sensitive files** that may contain exposed data (e.g., `.pdf`, `.docx`, `.txt`, etc.).
 - 🌐 Identify **potential attack vectors** by scanning for misconfigurations or leaked data online.
+
+## ⚠️ Disclaimer  
+
+**ZeroTrace** was developed **exclusively for educational and research purposes** as part of my **learning experience in cybersecurity and ethical hacking**. This project serves as a **practical application of the knowledge acquired during a cybersecurity course**, allowing me to experiment in a **controlled environment** and include it in my **cybersecurity portfolio**.  
+
+This tool is intended **solely for ethical security research** and **authorized penetration testing**. Any use **outside of legal and authorized environments**—such as reconnaissance without consent or unauthorized data access—is **strictly prohibited**.  
+
+**Unauthorized use of ZeroTrace to gather or exploit sensitive information is illegal** and may violate laws.  
+
+**I assume no responsibility for any misuse of this tool.** Users must ensure they have **explicit authorization** before performing any security assessments. **Always operate within legal and ethical boundaries.**  
 
 ## 🌟 **Explore My Other Open-Source Ethical Hacking Tools**
 
@@ -219,6 +227,16 @@ This example illustrates the power of ZeroTrace in automating the search and col
 ## 🔐 **Ethical Use**
 
 This tool is meant for **ethical hacking** and **cybersecurity research** purposes. Ensure that you have proper authorization before using ZeroTrace for any reconnaissance activities. Unauthorized use to access or download sensitive data may be illegal in your jurisdiction.
+
+## ⚠️ Disclaimer  
+
+**ZeroTrace** was developed **exclusively for educational and research purposes** as part of my **learning experience in cybersecurity and ethical hacking**. This project serves as a **practical application of the knowledge acquired during a cybersecurity course**, allowing me to experiment in a **controlled environment** and include it in my **cybersecurity portfolio**.  
+
+This tool is intended **solely for ethical security research** and **authorized penetration testing**. Any use **outside of legal and authorized environments**—such as reconnaissance without consent or unauthorized data access—is **strictly prohibited**.  
+
+**Unauthorized use of ZeroTrace to gather or exploit sensitive information is illegal** and may violate laws.  
+
+**I assume no responsibility for any misuse of this tool.** Users must ensure they have **explicit authorization** before performing any security assessments. **Always operate within legal and ethical boundaries.**  
 
 ## 🎯 **Future Improvements**
 
