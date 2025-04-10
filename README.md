@@ -1,20 +1,22 @@
-# 🌐 **ZeroTrace**: The Ultimate Ethical Hacking & Search Engine Dorking Tool 🔍🚀
+# 🌐 **ZeroTrace**: A Personal Ethical Hacking & Search Engine Dorking Tool 🔍🚀
 
-Welcome to **ZeroTrace**, your go-to tool for ethical hacking and advanced search engine dorking! ⚡
+Welcome to **ZeroTrace**, a personal project designed to explore **ethical hacking** and **search engine dorking** techniques! ⚡
 
-ZeroTrace is an innovative tool designed for **cybersecurity professionals** and **ethical hackers** 🛡️ to identify potential **attack vectors** 🌍 across the vast expanse of the **World Wide Web**. Whether you're performing reconnaissance on a target or conducting security research, ZeroTrace helps you uncover hidden and sensitive information 🔓 that may be exposed due to **misconfigurations** or **poor security practices**.
+ZeroTrace is a tool built for **cybersecurity professionals** and **ethical hackers** 🛡️ to help identify **potential attack vectors** 🌍 across the web. Whether you're conducting reconnaissance or performing security research, ZeroTrace helps uncover **hidden** and **sensitive information** 🔓 that may be exposed due to **misconfigurations** or **poor security practices**.
 
-🙏 I would like to express my sincere gratitude to [Santiago Hernández, a leading expert in Cybersecurity and Artificial Intelligence](https://www.udemy.com/user/shramos/). His outstanding course on **Cybersecurity and Ethical Hacking**, available on Udemy, was instrumental in the development of this project. The insights and techniques I gained from his course were invaluable in guiding my approach to cybersecurity practices. Thank you for sharing your knowledge and expertise!
+🙏 Special thanks to [Santiago Hernández, a leading expert in Cybersecurity and Artificial Intelligence](https://www.udemy.com/user/shramos/). His course on **Cybersecurity and Ethical Hacking** on Udemy was an essential part of the learning process and contributed greatly to the development of this tool. The insights I gained through this course were key to shaping this project.
 
 ## 🔍 **What is ZeroTrace?**
 
-ZeroTrace helps **ethical hackers** and **security researchers** streamline the process of identifying sensitive information online. By generating precise and powerful Google Dorks, it automates reconnaissance activities, providing quick access to potential vulnerabilities and misconfigurations in systems exposed on the internet.
+**ZeroTrace** simplifies the process of finding sensitive information online, helping **ethical hackers** and **security researchers** conduct **reconnaissance** and identify vulnerabilities more efficiently. Using **AI-powered algorithms**, the tool optimizes **Google Dorks**, automating the search for misconfigurations or exposed data.
 
 ### With ZeroTrace, you can:
 - 🔑 **Transform your search queries** into **optimized Google Dorks** using **AI-powered LLMs**.
-- 📊 **Generate reports** with search results for documentation and analysis.
-- 📂 **Download sensitive files** that may contain exposed data (e.g., `.pdf`, `.docx`, `.txt`, etc.).
-- 🌐 Identify **potential attack vectors** by scanning for misconfigurations or leaked data online.
+- 📊 **Generate reports** with search results to document and analyze vulnerabilities.
+- 📂 **Download exposed files** that may contain sensitive data (e.g., `.pdf`, `.docx`, `.txt`, etc.).
+- 🌐 Identify **potential attack vectors** by scanning for data leaks and misconfigurations online.
+
+This tool was developed as part of a **personal project** during my **cybersecurity course**, providing an opportunity to apply what I learned in a practical and educational way. **ZeroTrace** is meant to be an ethical and responsible tool for improving cybersecurity knowledge while helping you learn the ropes of ethical hacking.
 
 ## ⚠️ Disclaimer  
 
@@ -28,40 +30,48 @@ This tool is intended **solely for ethical security research** and **authorized 
 
 ## 🌟 **Explore My Other Open-Source Ethical Hacking Tools**
 
-If you're interested in more powerful tools for ethical hacking, make sure to check out my other open-source projects designed to help cybersecurity professionals and penetration testers:
+As part of my personal journey in **ethical hacking** and **cybersecurity**, I've developed several open-source tools that aim to help **cybersecurity professionals**, **penetration testers**, and fellow learners better understand and tackle security challenges. These projects are a great way to practice and apply ethical hacking techniques while contributing to the community.
 
-- [🦅 **NetHawk**](https://github.com/sergio11/nethawk_analyzer): A state-of-the-art **AI-powered ethical hacking tool** for **network vulnerability assessment**. Using advanced frameworks like **Scapy** and **Nmap**, NetHawk automates **port scanning**, **vulnerability detection**, and **report generation**, making security audits faster, smarter, and more efficient. Whether you're a **network administrator**, **cybersecurity expert**, or **ethical hacker**, NetHawk simplifies the assessment process and offers actionable insights to fortify your systems.
-- [💀 **Nemesys**](https://github.com/sergio11/nemesys): An advanced **exploitation** and **post-exploitation** tool built on top of the **Metasploit Framework** for automating critical data harvesting and system enumeration.  
-- [🕷️ **BlackVenom**](https://github.com/sergio11/blackvenom): The ultimate **ARP** and **DNS spoofing** tool for **intercepting network traffic** and uncovering vulnerabilities with stealth and precision.  
-- [🌐 **ZeroTrace**](https://github.com/sergio11/zero_trace_hacking_tool): A powerful **search engine dorking** tool designed to identify **attack vectors** and uncover **exposed sensitive information** across the web.
-- 🔐 **DecryptX**: An **advanced hash and password security assessment tool** that empowers you to analyze **password hashes**, **encrypted ZIP files**, and more. Ideal for evaluating the strength of encryption and identifying weaknesses in **security implementations**.
-- [ 🌑 **EclipseRecon**](https://github.com/sergio11/eclipserecon): is a stealthy web reconnaissance tool for uncovering hidden vulnerabilities, subdomains, and site structures. 🕵️‍♂️🔍 It empowers security professionals to identify critical attack surfaces with precision, ensuring proactive defense. 🚨💻
-- [ 🌐 **ZoneGuardian**](https://github.com/sergio11/zoneguardian): A powerful tool to analyze DNS configurations, detect vulnerabilities, and generate actionable security reports. 🔒🚀 Safeguard your digital assets with precision and ease!
-- **Retrospect**: A cutting-edge **reconnaissance and security analysis tool** that retrieves and analyzes historical web snapshots, helping you uncover past vulnerabilities and misconfigurations before they can be exploited today. Ideal for **ethical hackers** and **digital forensics experts**.
+Here’s a list of tools I’ve created to aid in various aspects of cybersecurity:
+
+- [🦅 **NetHawk**](https://github.com/sergio11/nethawk_analyzer): A personal project focused on **network vulnerability assessment**, powered by **AI**. It uses frameworks like **Scapy** and **Nmap** to automate **port scanning**, **vulnerability detection**, and **report generation**, simplifying the security auditing process.
   
-These tools are designed to streamline penetration testing, enhance security assessments, and provide in-depth insights into vulnerabilities. Explore them to level up your ethical hacking skills! 💻🔍
+- [💀 **Nemesys**](https://github.com/sergio11/nemesys): A tool for **exploitation** and **post-exploitation**, built on the **Metasploit Framework**. It's designed to automate data harvesting and system enumeration, providing insights into the vulnerabilities within a system.
 
+- [🕷️ **BlackVenom**](https://github.com/sergio11/blackvenom): A tool to perform **ARP** and **DNS spoofing**, focused on intercepting network traffic and identifying vulnerabilities, all while following ethical hacking practices.
+
+- [🌐 **ZeroTrace**](https://github.com/sergio11/zero_trace_hacking_tool): A **search engine dorking** tool designed to uncover **sensitive information** and **attack vectors** across the web. It aims to automate reconnaissance tasks and identify potential vulnerabilities exposed online.
+
+- 🔐 **DecryptX**: A tool designed to assess **hashes** and **password security**, enabling the analysis of **password hashes**, **encrypted ZIP files**, and more. It’s built for evaluating encryption strength and identifying weaknesses in security implementations.
+
+- [🌑 **EclipseRecon**](https://github.com/sergio11/eclipserecon): A web reconnaissance tool created to uncover **hidden vulnerabilities**, **subdomains**, and site structures. It’s aimed at helping security professionals identify potential attack surfaces for proactive defense.
+
+- [🌐 **ZoneGuardian**](https://github.com/sergio11/zoneguardian): A tool for analyzing **DNS configurations**, detecting vulnerabilities, and generating actionable security reports. This tool provides a streamlined approach to safeguarding your digital assets.
+
+- **Retrospect**: A cutting-edge tool for **reconnaissance** and **security analysis** that retrieves and analyzes historical web snapshots. It helps uncover past vulnerabilities and misconfigurations before they can be exploited today.
+
+These tools are the result of my personal learning experience in ethical hacking. They are designed to assist with penetration testing, security auditing, and vulnerability analysis. I hope they help you as much as they’ve helped me in honing my skills! 💻🔍
 
 ## ⚡ **Key Features**
 
-- **AI-Powered Dork Generation** 🤖: Leverages **LLMs like Llama3** through **Groq** to generate precise Google Dorks based on user descriptions.
+- **AI-Powered Dork Generation** 🤖: Uses **LLMs like Llama3** and **Groq** to generate precise Google Dorks based on user descriptions, improving the accuracy of searches.
   
-- **Automated Search Queries** 🔍: Perform advanced search queries using **Google Custom Search** to retrieve relevant results.
+- **Automated Search Queries** 🔍: Perform advanced search queries using **Google Custom Search** to retrieve relevant results and identify vulnerabilities.
 
-- **File Downloading** 💾: Automatically download files (e.g., `.pdf`, `.docx`, `.txt`) that expose sensitive information, streamlining your reconnaissance process.
+- **File Downloading** 💾: Automatically download files that expose sensitive information (e.g., `.pdf`, `.docx`, `.txt`), making the reconnaissance process more efficient.
 
-- **Detailed Reports** 📝: Export search results in **HTML** and **JSON** formats for documentation and further analysis.
+- **Detailed Reports** 📝: Export search results in **HTML** and **JSON** formats for easy documentation and further analysis.
 
-- **Customizable Filters** 🔧: Set specific search filters, such as file types or languages, to narrow down results and focus on the most relevant data.
+- **Customizable Filters** 🔧: Set specific filters, such as file types or languages, to refine your search results and focus on the most relevant data.
 
 ## 🚀 **How It Works**
 
-1. **Configure API Keys** 🔐: Set up your **Google API Key** and **Custom Search Engine ID**.
-2. **Enter a Query**: Provide a search description or Google Dork directly.
-3. **AI-Assisted Dork Generation**: ZeroTrace uses **LLMs** to generate Google Dorks based on user input.
-4. **Retrieve Results**: Perform advanced searches and collect relevant information from the web.
-5. **Download Files**: Automatically download files containing sensitive information.
-6. **Export Reports**: Save your results in **HTML** or **JSON** formats for further analysis.
+1. **Configure API Keys** 🔐: Set up your **Google API Key** and **Custom Search Engine ID** for seamless operation.
+2. **Enter a Query**: Provide a search description or a specific Google Dork.
+3. **AI-Assisted Dork Generation**: **ZeroTrace** uses **LLMs** to generate optimized Google Dorks based on your input.
+4. **Retrieve Results**: Perform searches and retrieve relevant information from the web quickly and accurately.
+5. **Download Files**: Automatically download exposed files containing sensitive information.
+6. **Export Reports**: Save the results in **HTML** or **JSON** formats for easy documentation and analysis.
 
 ## 🧑‍💻 **Installation**
 
