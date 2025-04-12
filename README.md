@@ -46,7 +46,7 @@ Here’s a list of tools I’ve created to aid in various aspects of cybersecuri
 
 - [🌑 **EclipseRecon**](https://github.com/sergio11/eclipserecon): A web reconnaissance tool created to uncover **hidden vulnerabilities**, **subdomains**, and site structures. It’s aimed at helping security professionals identify potential attack surfaces for proactive defense.
 
-- [🌐 **ZoneGuardian**](https://github.com/sergio11/zoneguardian): A tool for analyzing **DNS configurations**, detecting vulnerabilities, and generating actionable security reports. This tool provides a streamlined approach to safeguarding your digital assets.
+- **ZoneGuardian**: A tool for analyzing **DNS configurations**, detecting vulnerabilities, and generating actionable security reports. This tool provides a streamlined approach to safeguarding your digital assets.
 
 - **Retrospect**: A cutting-edge tool for **reconnaissance** and **security analysis** that retrieves and analyzes historical web snapshots. It helps uncover past vulnerabilities and misconfigurations before they can be exploited today.
 
