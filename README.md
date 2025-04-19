@@ -28,30 +28,6 @@ This tool is intended **solely for ethical security research** and **authorized 
 
 **I assume no responsibility for any misuse of this tool.** Users must ensure they have **explicit authorization** before performing any security assessments. **Always operate within legal and ethical boundaries.**  
 
-## 🌟 **Explore My Other Open-Source Ethical Hacking Tools**
-
-As part of my personal journey in **ethical hacking** and **cybersecurity**, I've developed several open-source tools that aim to help **cybersecurity professionals**, **penetration testers**, and fellow learners better understand and tackle security challenges. These projects are a great way to practice and apply ethical hacking techniques while contributing to the community.
-
-Here’s a list of tools I’ve created to aid in various aspects of cybersecurity:
-
-- [🦅 **NetHawk**](https://github.com/sergio11/nethawk_analyzer): A personal project focused on **network vulnerability assessment**, powered by **AI**. It uses frameworks like **Scapy** and **Nmap** to automate **port scanning**, **vulnerability detection**, and **report generation**, simplifying the security auditing process.
-  
-- [💀 **Nemesys**](https://github.com/sergio11/nemesys): A tool for **exploitation** and **post-exploitation**, built on the **Metasploit Framework**. It's designed to automate data harvesting and system enumeration, providing insights into the vulnerabilities within a system.
-
-- [🕷️ **BlackVenom**](https://github.com/sergio11/blackvenom): A tool to perform **ARP** and **DNS spoofing**, focused on intercepting network traffic and identifying vulnerabilities, all while following ethical hacking practices.
-
-- [🌐 **ZeroTrace**](https://github.com/sergio11/zero_trace_hacking_tool): A **search engine dorking** tool designed to uncover **sensitive information** and **attack vectors** across the web. It aims to automate reconnaissance tasks and identify potential vulnerabilities exposed online.
-
-- 🔐 **DecryptX**: A tool designed to assess **hashes** and **password security**, enabling the analysis of **password hashes**, **encrypted ZIP files**, and more. It’s built for evaluating encryption strength and identifying weaknesses in security implementations.
-
-- [🌑 **EclipseRecon**](https://github.com/sergio11/eclipserecon): A web reconnaissance tool created to uncover **hidden vulnerabilities**, **subdomains**, and site structures. It’s aimed at helping security professionals identify potential attack surfaces for proactive defense.
-
-- **ZoneGuardian**: A tool for analyzing **DNS configurations**, detecting vulnerabilities, and generating actionable security reports. This tool provides a streamlined approach to safeguarding your digital assets.
-
-- **Retrospect**: A cutting-edge tool for **reconnaissance** and **security analysis** that retrieves and analyzes historical web snapshots. It helps uncover past vulnerabilities and misconfigurations before they can be exploited today.
-
-These tools are the result of my personal learning experience in ethical hacking. They are designed to assist with penetration testing, security auditing, and vulnerability analysis. I hope they help you as much as they’ve helped me in honing my skills! 💻🔍
-
 ## ⚡ **Key Features**
 
 - **AI-Powered Dork Generation** 🤖: Uses **LLMs like Llama3** and **Groq** to generate precise Google Dorks based on user descriptions, improving the accuracy of searches.
