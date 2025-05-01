@@ -198,7 +198,7 @@ Files that match the search criteria are automatically downloaded and stored in 
 
 ```python
 2024-09-27 20:07:45,016 - INFO - 📥 Downloading files with types: all
-File 'Readme_Baltic%20Sea%20Surface%20Salinity%20L3%20maps.txt' downloaded to 'downloads\Readme_Baltic%20Sea%20Surface%20Salinity%20L3%20maps.txt'.
+File 'file_example.txt' downloaded to 'downloads\file_example.txt'.
 ...
 ```
 
