@@ -230,21 +230,12 @@ This tool is intended **solely for ethical security research** and **authorized 
 - ⚙️ **Custom Search Engines**: Adding support for more search engines beyond Google.
 - 📊 **Advanced Reporting**: More detailed and customizable reports.
 
-## 🤝 **Contributing**
-Contributions to ZeroTrace are highly encouraged! If you're interested in adding new features, resolving bugs, or enhancing the project's functionality, please feel free to submit pull requests.
+## Credits
 
-## Get in Touch 📬
+🙏 Special thanks to [Santiago Hernández, a leading expert in Cybersecurity and Artificial Intelligence](https://www.udemy.com/user/shramos/). His course on **Cybersecurity and Ethical Hacking** on Udemy was an essential part of the learning process and contributed greatly to the development of this tool. The insights I gained through this course were key to shaping this project.
 
-ZeroTrace is developed and maintained by **Sergio Sánchez Sánchez** (Dream Software). Special thanks to the open-source community and the contributors who have made this project possible. If you have any questions, feedback, or suggestions, feel free to reach out at  [dreamsoftware92@gmail.com](mailto:dreamsoftware92@gmail.com).
 
-## Visitors Count
-
-<img width="auto" src="https://profile-counter.glitch.me/zero_trace_hacking_tool/count.svg" />
-
-## Please Share & Star the repository to keep me motivated.
-  <a href = "https://github.com/sergio11/zero_trace_hacking_tool/stargazers">
-     <img src = "https://img.shields.io/github/stars/sergio11/zero_trace_hacking_tool" />
-  </a>
+Special thanks to the open-source community and the contributors who have made this project possible.
 
 ## License ⚖️
 
@@ -281,3 +272,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+## Visitors Count
+
+<img width="auto" src="https://profile-counter.glitch.me/zero_trace_hacking_tool/count.svg" />
