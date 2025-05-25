@@ -6,6 +6,12 @@ ZeroTrace is a tool built for **cybersecurity professionals** and **ethical hack
 
 🙏 Special thanks to [Santiago Hernández, a leading expert in Cybersecurity and Artificial Intelligence](https://www.udemy.com/user/shramos/). His course on **Cybersecurity and Ethical Hacking** on Udemy was an essential part of the learning process and contributed greatly to the development of this tool. The insights I gained through this course were key to shaping this project.
 
+<p align="center">
+  <img src="https://img.shields.io/badge/langchain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
+</p>
+
 ## 🔍 **What is ZeroTrace?**
 
 **ZeroTrace** simplifies the process of finding sensitive information online, helping **ethical hackers** and **security researchers** conduct **reconnaissance** and identify vulnerabilities more efficiently. Using **AI-powered algorithms**, the tool optimizes **Google Dorks**, automating the search for misconfigurations or exposed data.
@@ -230,10 +236,9 @@ This tool is intended **solely for ethical security research** and **authorized 
 - ⚙️ **Custom Search Engines**: Adding support for more search engines beyond Google.
 - 📊 **Advanced Reporting**: More detailed and customizable reports.
 
-## Credits
+## Acknowledgements 🙏
 
 🙏 Special thanks to [Santiago Hernández, a leading expert in Cybersecurity and Artificial Intelligence](https://www.udemy.com/user/shramos/). His course on **Cybersecurity and Ethical Hacking** on Udemy was an essential part of the learning process and contributed greatly to the development of this tool. The insights I gained through this course were key to shaping this project.
-
 
 Special thanks to the open-source community and the contributors who have made this project possible.
 
